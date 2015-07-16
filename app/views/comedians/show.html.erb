@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @comedian.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @comedian.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @comedian.password_digest %>
+</p>
+
+<p>
+  <strong>Authenticy Token</strong>
+  <%= form_authenticity_token %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @comedian.location %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @comedian.photo %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @comedian.bio %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @comedian.twitter %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @comedian.facebook %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @comedian.instagram %>
+</p>
+
+<p>
+  <strong>Youtube:</strong>
+  <%= @comedian.youtube %>
+</p>
+
+<%= link_to 'Edit', edit_comedian_path(@comedian) %> |
+<%= link_to 'Back', comedians_path %>

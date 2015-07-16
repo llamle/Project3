@@ -1,0 +1,61 @@
+<%= form_for(@comedian) do |f| %>
+  <% if @comedian.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comedian.errors.count, "error") %> prohibited this comedian from being saved:</h2>
+
+      <ul>
+      <% @comedian.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <input type="hidden" name="authenticy_token" value="<%= form_authenticity_token %>">
+
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br>
+    <%= f.text_area :photo %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br>
+    <%= f.text_area :bio %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br>
+    <%= f.text_area :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_area :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %><br>
+    <%= f.text_area :instagram %>
+  </div>
+  <div class="field">
+    <%= f.label :youtube %><br>
+    <%= f.text_area :youtube %>
+  </div>
+  <div class="actions">
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons">send</i>
+      </button>
+  </div>
+<% end %>
