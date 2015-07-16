@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ @media (max-width: 992px) {
+   .startForm {
+     width: 100%;
+     margin: 0 auto;   }
+ }
+ @media (min-width: 993px) {
+  .startForm{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
