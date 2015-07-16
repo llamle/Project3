@@ -1,15 +1,18 @@
-<h1>New User</h1>
+<div class="">
 
-<div class="row">
-  <div class="col s12">
-    <ul class="tabs">
-      <li class="tab col s3"><a href="#users">User Signup</a></li>
-      <li class="tab col s3"><a class="active" href="#login">Log in</a></li>
-      <li class="tab col s3"><a href="#comedians">Comedian Signup</a></li>
-    </ul>
-    <br/>
+  <h3>New User</h3>
+
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#users">User Signup</a></li>
+        <li class="tab col s3"><a class="active" href="#login">Log in</a></li>
+        <li class="tab col s3"><a href="#comedians">Comedian Signup</a></li>
+      </ul>
+      <br/>
+    </div>
+    <div id="users" class="col s12"><%= render 'users/form' %></div>
+    <div id="login" class="col s12"><%= render 'sessions/form' %></div>
+    <div id="comedians" class="col s12"><%= render 'comedians/form' %></div>
   </div>
-  <div id="users" class="col s12"><%= render 'users/form' %></div>
-  <div id="users" class="col s12"><%= render 'sessions/form' %></div>
-  <div id="comedians" class="col s12"><%= render 'comedians/form' %></div>
 </div>
