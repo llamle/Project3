@@ -25,3 +25,22 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 992px) {
+  .editForm {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 993px) {
+ .editForm{
+   width: 50%;
+   margin: 0 auto;
+ }
+}
+/*.switch label .lever{
+  background: red;
+}
+.switch label .lever::after{
+  background: red;
+}*/
