@@ -13,12 +13,15 @@
   <input type="hidden"
          name="authenticity_token"
          value="<%= form_authenticity_token %>">
+
+  <label for="username">Username</label>
   <input type="text"
-         name="user[username]"
-         placeholder="user name">
+         name="user[username]">
+
+  <label for="password">Password</label>
   <input type="password"
-         name="user[password]"
-         placeholder="password">
+         name="user[password]">
+
   <div class="actions">
     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
         <i class="material-icons">send</i>
