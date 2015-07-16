@@ -28,6 +28,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'paperclip', '~> 4.3.0'
 gem 'rmagick', '~> 2.15.2'
 gem 'oauth', '~> 0.4.7'
+gem 'materialize-sass'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
