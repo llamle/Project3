@@ -1,5 +1,14 @@
 <form action="<%= session_path %>" method="post" autocomplete="off">
-  <h1>Sign in to VFL</h1>
+
+  <div class="switch">
+    <h5>Log in as:</h5>
+    <label>
+      User
+      <input type="checkbox">
+      <span class="lever"></span>
+      Comedian
+    </label>
+  </div><br/>
 
   <input type="hidden"
          name="authenticity_token"
