@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Vfl</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,8 +21,9 @@
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">VoteForLaughs</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="sass.html">Comedians</a></li>
+        <li><a href="<%= new_user_url %>">Home</a></li>
+        <li><a href="<%= comedians_url %>">Comedians</a></li>
+        <li><a href="<%= events_url %>">Events</a></li>
         <!-- Dropdown Trigger -->
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
@@ -32,7 +33,7 @@
 <%= yield %>
 
 </body>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
 </html>

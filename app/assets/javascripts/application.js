@@ -12,20 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 $(window).load(function(){
-    var input = document.getElementById('event_location');
-    var options = {
-      types: ['(cities)'],
-      componentRestrictions: {country: 'US'}
-    };
+  var input = document.getElementById('event_location');
+  var options = {
+    types: ['(cities)'],
+    componentRestrictions: {country: 'US'}
+  };
 
   autocomplete = new google.maps.places.Autocomplete(input, options);
 });
 
 $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
+  selectMonths: true, // Creates a dropdown to control month
+  selectYears: 15 // Creates a dropdown of 15 years to control year
+});
