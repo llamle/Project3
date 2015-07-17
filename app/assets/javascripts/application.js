@@ -22,7 +22,32 @@ $(window).load(function(){
   };
 
   autocomplete = new google.maps.places.Autocomplete(input, options);
+
+
+// This gives function to the lever allowing the user to decide if they will log into the user table or comedian table.
+  $("#check_user + .lever").click( function(){
+   if( $("#check_user").is(':checked') ){
+      $('#un').attr('name', 'user[username]').attr('placeholder', 'Logging in as User');
+      $('#pw').attr('name', 'user[password]');
+
+    } else {
+      $('#un').attr('name', 'comedian[username]').attr('placeholder', 'Logging in as Comedian');
+      $('#pw').attr('name', 'comedian[password]');
+    }
+  });
+
+  $('#user_check').click( function (){
+    $('#un').attr('name', 'user[username]').attr('placeholder', 'Logging in as User');
+    $('#pw').attr('name', 'user[password]');
+  });
+
+  $('#comedian_check').click( function (){
+    $('#un').attr('name', 'comedian[username]').attr('placeholder', 'Logging in as Comedian');
+    $('#pw').attr('name', 'comedian[password]');
+  });
+
 });
+
 
 $('.datepicker').pickadate({
   selectMonths: true, // Creates a dropdown to control month

@@ -38,6 +38,9 @@
    margin: 0 auto;
  }
 }
+div .switch{
+  text-align: center;
+}
 /*.switch label .lever{
   background: red;
 }

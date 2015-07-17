@@ -3,12 +3,14 @@
   <div class="switch">
     <h5>Log in as:</h5>
     <label>
-      User
+      <span id="user_check">User</span>
       <input id="check_user" type="checkbox">
       <span for="check_user" class ="lever"></span>
-      Comedian
+      <span id ="comedian_check">Comedian</span>
     </label>
   </div><br/>
+
+
 
   <input type="hidden"
          name="authenticity_token"
@@ -16,10 +18,13 @@
 
   <label for="username">Username</label>
   <input type="text"
-         name="user[username]">
+         id="un"
+         name="user[username]"
+         placeholder="Logging in as User">
 
   <label for="password">Password</label>
   <input type="password"
+         id="pw"
          name="user[password]">
 
   <div class="actions">
